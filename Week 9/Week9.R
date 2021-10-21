@@ -17,6 +17,7 @@ cereals=cereals[,-1]
 str(cereals)
 edit(cereals)
 
+
 #### Задача 2 ####
 
 rm(list=ls())   
@@ -24,14 +25,9 @@ library(readxl)
 fifa19=as.data.frame(read_excel("Data\\fifa19_forward.xls",sheet=1))
 
 
+
 #### Задача 3 ####
-# Като изплозвате данните 'fifa19' и постъпкова регресия, конструирайте линеен модел 
-# за предсказване на заплатата ('wage') на водещите нападатели във футбола. От колко 
-# променливи се състои окончателният модел?
 
-
-
-#################################################################################
 indexList=order(abs(corY),decreasing = TRUE) # Ordered list of indices for predictors 
 currentIndexList=indexList[2] # List of indices of predictors included in the current step
 
